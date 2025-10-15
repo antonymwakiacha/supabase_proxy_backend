@@ -1,2 +1,2 @@
-web: gunicorn supabase_proxy_backend.wsgi
+web: gunicorn backend.wsgi
 
