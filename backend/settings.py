@@ -9,7 +9,12 @@
 # # Now fetch your Supabase variables
 # SUPABASE_URL = os.getenv("SUPABASE_URL")
 # SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+import os
+from dotenv import load_dotenv
 
+load_dotenv()  # make sure this line is near the top
+
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 """
 Django settings for backend project.
@@ -33,7 +38,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-t9y^qs5$u&w9s_y1p$0wb9y=_9w9)*(3!ym+4t06dlys63*d!8'
+#SECRET_KEY = 'django-insecure-t9y^qs5$u&w9s_y1p$0wb9y=_9w9)*(3!ym+4t06dlys63*d!8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
